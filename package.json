@@ -1,0 +1,31 @@
+{
+  "name": "std-react-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "std-lint-cli-scan": "std-lint-cli scan",
+    "std-lint-cli-fix": "std-lint-cli fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqsj17/std-react-hooks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sqsj17/std-react-hooks/issues"
+  },
+  "homepage": "https://github.com/sqsj17/std-react-hooks#readme",
+  "devDependencies": {
+    "std-lint-cli": "^1.0.13"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "std-lint-cli commit-file-scan",
+      "commit-msg": "std-lint-cli commit-msg-scan"
+    }
+  }
+}
